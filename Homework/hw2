@@ -1,9 +1,11 @@
-P→¬¬P
+P⇒¬¬P
 
 Suponha P; --DADOS: P | ALVO: (P→⊥)→⊥
-Suponha ¬P; --DADOS: P,(P→⊥) | ALVO: ⊥
+Suponha ¬P; --DADOS: P,(P⇒⊥) | ALVO: ⊥
 Aplique ¬P em P para obter ⊥; --DADOS:... ⊥ | ALVO: ⊥
 Contradição.
+
+
 
 
 
