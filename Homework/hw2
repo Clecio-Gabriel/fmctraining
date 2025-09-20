@@ -1,10 +1,57 @@
-P⇒¬¬P
+1)
+
+    1.1.:P⇒¬¬P
+DEMONS.:
 
 Suponha P; --DADOS: P | ALVO: (P→⊥)→⊥
 Suponha ¬P; --DADOS: P,(P⇒⊥) | ALVO: ⊥
 Aplique ¬P em P para obter ⊥; --DADOS:... ⊥ | ALVO: ⊥
 Contradição.
+◻️
 
+    1.2.:¬¬P⇒P
+DEMONS.:
+
+Suponha ¬¬P; --DADOS: (¬P⇒⊥) | ALVO: P
+LEM P; --DADOS: (¬P⇒⊥), | ALVO: (P ou ¬P)
+<travado>
+
+--------------------------
+
+2)
+
+    2.1.: (P ou Q) ⇒ (Q ou P)
+DEMONS.:
+
+Suponha (P ou Q);
+Separe em casos a partir de (P ou Q);
+    Caso P:
+        Esc-R;
+        Imediato.
+    Caso Q:
+        Similar.
+◻️
+
+    2.2.: (P e Q) ⇒ (Q e P)
+DEMONS.:
+
+Suponha (P e Q);
+Split;
+    Caso Q:
+        Ext-R (P e Q);
+        Imediato;
+    Caso P:
+        Similar.
+◻️
+
+---------------------------
+
+3)
+
+    3.1.: (P⇒Q)⇒(¬P ou Q)
+DEMONS.:
+
+Suponha (P⇒Q);
 
 
 
