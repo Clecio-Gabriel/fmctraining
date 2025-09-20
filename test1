@@ -1,0 +1,49 @@
+A.
+
+
+
+B) Sejam P, Q, R proposições
+    
+    B1. P&Q ⇒ ¬(¬P ou ¬Q)
+DEMONS.:
+
+Suponha P&Q;
+Suponha (¬P ou ¬Q); --ALVO: ⊥
+Separe em casos a partir de (¬P ou ¬Q):
+    Caso ¬P:
+        Ext-L P&Q; --DADOS:...P
+        Aplique (P⇒⊥) em P para obter ⊥;
+        Contradição;
+    Caso ¬Q:
+        Similar;
+◻️
+
+    B2: (P&Q⇒R)⇐⇒(P⇒(Q⇒R)) ⇚⇛ ((P&Q⇒R)⇒(P⇒(Q⇒R))) & ((P⇒(Q⇒R))⇒(P&Q⇒R))
+DEMONS.:
+
+Split;
+    Caso 1: --ALVO: ((P&Q⇒R)⇒(P⇒(Q⇒R)))
+        Suponha (P&Q⇒R);
+        Suponha P;
+        Suponha Q; --ALVO: R
+        Vou demonstrar P&Q:
+            Split;
+                Caso P:
+                    Imediato.
+                Caso Q:
+                    Imediato.
+        Aplique (P&Q⇒R) em P&Q para obter R;
+        Imediato.
+
+    Caso 2: --ALVO: ((P⇒(Q⇒R))⇒(P&Q⇒R))
+        Suponha (P⇒(Q⇒R));
+        Suponha (P&Q); --ALVO: R
+        Ext-L P&Q;
+        Aplique (P⇒(Q⇒R)) em P para obter (Q⇒R);
+        Ext-R P&Q;
+        Aplique (Q⇒R) em Q para obter R;
+        Imediato.
+◻️
+        
+
+
