@@ -13,7 +13,6 @@ Contradição.
 DEMONS.:
 
 Suponha ¬¬P; --DADOS: (¬P⇒⊥) | ALVO: P
-LEM P; --DADOS: (¬P⇒⊥), | ALVO: (P ou ¬P)
 <travado>
 
 --------------------------
