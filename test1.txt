@@ -18,7 +18,7 @@ Separe em casos a partir de (¬P ou ¬Q):
         Similar;
 ◻️
 
-    B2: (P&Q⇒R)⇐⇒(P⇒(Q⇒R)) ⇚⇛ ((P&Q⇒R)⇒(P⇒(Q⇒R))) & ((P⇒(Q⇒R))⇒(P&Q⇒R))
+    B2: (P&Q⇒R)⇐⇒(P⇒(Q⇒R)) ⇔ ((P&Q⇒R)⇒(P⇒(Q⇒R))) & ((P⇒(Q⇒R))⇒(P&Q⇒R))
 DEMONS.:
 
 Split;
@@ -47,7 +47,7 @@ Split;
         
 C)
 
-    C1. Existência e unicidade da (·)-Identidade ⇚⇛ 
+    C1. Existência e unicidade da (·)-Identidade 
 
     C2. 
 
