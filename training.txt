@@ -42,17 +42,16 @@ caso []:
 --alvo: length ([]++ys) = length [] + length ys
 calculamos:
     length ([]++ys)
-        = length ys     [++.1]
+        = length ys     [(++).1]
         = 0 + length ys [zero_add]
         = length [] + length ys [length.1]
-Imediato.
 
 caso (x:xs):
 -- H.I.: length (l++ys) = length l + length ys
 -- ALVO: length ((k::l)++ys) = length (k::l) + length ys
 calculamos:
     length ((k::l)++ys)
-        = length (k :: (l ++ ys)) [++.1]
+        = length (k :: (l ++ ys)) [(++).1]
         = S(length(l ++ ys))      [length.2]
         = S(length l + length ys) [H.I.]
     length (k::l) + length ys =
