@@ -1,0 +1,46 @@
+A)
+
+data Nat
+    O : Nat
+    S : Nat → Nat
+
+List: Type α → List α
+data List α
+    [] : List α
+    x :: [] : α x → List α → List α
+
+
+Length : List Nat → Nat
+Length [] = O
+Length _::xs = S (length xs)
+
+(++) : List α → List α → List α
+[] ++ ys = ys
+(x::xs) ++ ys = x :: (xs++ys)
+
+reverse : List Nat → List Nat
+reverse [] = []
+reverse (xs::x) = 
+
+map : (α → β) → (List α → List β)
+map f [] = []
+map f (x:xs) = f x :: map f xs 
+
+filter : (α → Bool) → (Lα → Lα)
+filter p [] = []
+filter p [x:xs] = 
+                | p x == True       = x : filter p xs
+                | otherwise         = filter p xs
+
+length (xs++ys) = length xs + length ys
+
+Por indução em xs
+caso []:
+--alvo: length ([]++ys) = length [] + length ys
+C
+
+
+
+
+
+
