@@ -62,8 +62,34 @@ calculamos:
 Imediato◻️
 
 
+```lean
+⊢ (∀m, n, d : Nat) [d · (m + n) = dm + dn]
 
+Seja a, b : Nat
 
+DEMONS.:
+Por indução em d.
 
+Caso O:
+--ALVO: 0 · (a + b) = 0·a + 0·b
+Calculamos:
+    0 · (a + b)
+        = (a + b) · 0 [(·)-com]
+        = 0    [(·).1]
+    0·a + 0·b
+        = 0 + 0 [(·).1]
+        = 0     [(+).1]
 
-
+Caso Sk:
+--H.I.: k · (a + b) = ka + kb
+--ALVO: Sk · (a + b) = Sk·a + Sk·b
+Calculamos:
+    Sk · (a + b)
+        = (a + b) · Sk  [(·)-com]
+        = (a + b) · k + (a + b) [(·).2]
+        = k · (a + b) + (a + b) [(·)-com]
+        = ka + kb + a + b   [←Hip.]
+        = ka + a + kb + b   [(+)-com]
+        = Sk · a + Sk · b   [←(·).2]
+Imediato◻️
+```
