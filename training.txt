@@ -93,3 +93,24 @@ Calculamos:
         = Sk · a + Sk · b   [←(·).2]
 Imediato◻️
 ```
+
+
+= ((ka + kb) + a) + b
+= (a + (ka + kb)) + b [(+)-com]
+= a + ka + kb + b [←(+)-assoc]
+
+= k · (a + b) + (a + b) [(·)-com]
+= (a + b) + k · (a + b) [(+)-com]
+= (ka + kb) + (a + b)   [Hip.]
+= (ka + kb) + (b + a)   [(+)-com]
+= (ka + kb) + b + a     [←(+)-assoc a:=(ka + kb) b:=b c:=a] ⇔ ((ka + kb) + b) + a
+= ((kb + ka) + b) + a   [(+)-com]
+= (b + (kb + ka)) + a   [(+)-com]
+= b + kb + ka + a       [←(+)-assoc]    ⇔ ((b + kb) + ka) + a
+= ((kb + b) + ka) + a   [(+)-com]
+= (Sk·b + ka) + a       [←(·).2]
+= a + (Sk·b + ka)       [(+)-com]
+= a + Sk·b + ka         [←(+)-assoc]    ⇔ (a + Sk·b) + ka
+= ka + (a + Sk·b)       [(+)-com]
+= ka + a + Sk·b         [(+)-assoc]     ⇔ (ka + a) + Sk·b
+= Sk·a + Sk·b           [(·).2]
